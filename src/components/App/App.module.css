@@ -1,0 +1,12 @@
+.container {
+  overflow: auto;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    0.25turn,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
+  padding: 1em;
+}
