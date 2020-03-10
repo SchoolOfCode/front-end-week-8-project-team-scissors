@@ -1,11 +1,11 @@
 import React from "react";
 
-function Link({ link, grid }) {
+function Portal({ link, grid, handleClick }) {
   return (
     <section className={grid}>
-      <button>{link}</button>
+      <button onClick={() => handleClick()}>{link}</button>
     </section>
   );
 }
 
-export default Link;
+export default Portal;
