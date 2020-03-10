@@ -1,0 +1,16 @@
+{
+    "type": "banner",
+    "heading": "Some motivating and inspired call to action."
+}
+
+{
+    "type": "content",
+    "title": "benefits blah",
+    "text": "here are the benefits of planting trees blah blah blah"
+}
+
+{
+    "type": "link",
+    "link": "insert link here"
+}
+
