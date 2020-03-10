@@ -24,13 +24,23 @@ const portal = { type: "portal", link: "insert link here" };
 function App() {
   return (
     <section className={css.appBody}>
-      <Banner {...banner} />
-      <Content {...content} grid={css.contentGrid1} />
-      <Content {...content} grid={css.contentGrid2} />
-      <Content {...content} grid={css.contentGrid3} />
-      <Counter grid={css.counterGrid1} />
-      <Portal {...portal} grid={css.portalGrid1} />
-      <Portal {...portal} grid={css.portalGrid2} />
+      <Router>
+        <Switch>
+          <Route path="/">
+            <Banner {...banner} />
+            <Content {...content} grid={css.contentGrid1} />
+            <Content {...content} grid={css.contentGrid2} />
+            <Content {...content} grid={css.contentGrid3} />
+            <Counter grid={css.counterGrid1} />
+            <Link className={css.portalGrid1} to="/Maps">
+              <Portal {...portal} />
+            </Link>
+            <Link className={css.portalGrid2} to="/Register">
+              <Portal {...portal} />
+            </Link>
+          </Route>
+        </Switch>
+      </Router>
     </section>
   );
 }
