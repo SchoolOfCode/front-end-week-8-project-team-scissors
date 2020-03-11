@@ -25,7 +25,7 @@ function RegisterForm({ grid }) {
 
     // setUser(newUser);
 
-    const response = await fetch("http://192.168.0.104:5000", {
+    const response = await fetch("http://localhost:5000/", {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
