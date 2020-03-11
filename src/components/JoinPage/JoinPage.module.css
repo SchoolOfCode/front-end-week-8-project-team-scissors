@@ -1,0 +1,75 @@
+.joinPage {
+  display: grid;
+  grid-template-columns: 5% 45% 45% 5%;
+  grid-template-rows: 5% 20% 50% 20%;
+  overflow: auto;
+  min-height: 95vh;
+  background-image: linear-gradient(
+    0.25turn,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
+  padding: 1em;
+}
+
+.titleGrid1 {
+  display: grid;
+  align-self: center;
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+  font-size: 70px;
+}
+
+.portalGrid3 {
+  display: grid;
+  grid-column: 2 / 3;
+  grid-row: 4 / 5;
+}
+
+.portalGrid4 {
+  display: grid;
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+}
+
+.contentGrid4 {
+  display: grid;
+  grid-column: 2 / 3;
+  grid-row: 3 / 4;
+}
+
+.contentGrid5 {
+  display: grid;
+  grid-column: 3 / 4;
+  grid-row: 3 / 4;
+}
+
+.registerPage {
+  display: grid;
+  grid-template-columns: 5% 45% 45% 5%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 20% 5%;
+  overflow: auto;
+  min-height: 70vh;
+  background-image: linear-gradient(
+    0.25turn,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
+  padding: 1em;
+}
+
+.registerSection {
+  display: grid;
+  grid-column: 2 / 3;
+  grid-row: 1 / 7;
+}
+
+.loginSection {
+  display: grid;
+  grid-column: 3 / 4;
+  grid-row: 1 / 7;
+}
