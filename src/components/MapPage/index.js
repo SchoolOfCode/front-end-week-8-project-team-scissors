@@ -1,64 +1,86 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState } from "react";
 
-import svg from "./garden.svg";
+import Map from "../Map";
 
-const links = [
-  {
-    coords: { lat: 52.4862, lng: -1.8904 }, // required: latitude & longitude at which to display the marker
-    title: `Life, the Universe and Everything`, // optional
-    url: `https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.7v7HW8kaMsxEVJP9HsPjhQHaHa%26pid%3DApi&f=1` // optional
-  }
-];
-
-function addMarkers(map, links) {
-  links.forEach((link, index) => {
-    const marker = new window.google.maps.Marker({
-      map,
-      position: link.coords,
-      label: `${index + 1}`,
-      title: link.title,
-      icon: svg
-    });
-    marker.addListener(`click`, () => {
-      window.location.href = link.url;
-    });
-  });
-}
-
-function Map({ options, onMount, className, onMountProps }) {
-  const ref = useRef();
-  const [map, setMap] = useState();
-
-  useEffect(() => {
-    const onLoad = () =>
-      setMap(new window.google.maps.Map(ref.current, options));
-    if (!window.google) {
-      const script = document.createElement(`script`);
-      script.src = `https://maps.googleapis.com/maps/api/js?key=AIzaSyB8EPkJkBv6UZMCP8xtrt9eFcWv5Mb6moc`;
-      document.head.append(script);
-      script.addEventListener(`load`, onLoad);
-      return () => script.removeEventListener(`load`, onLoad);
-    } else onLoad();
-  }, [options]);
-
-  if (map && typeof onMount === `function`) onMount(map, onMountProps);
-
-  //
-  return (
-    <div
-      style={{ height: `60vh`, margin: `1em 0`, borderRadius: `0.5em` }}
-      {...{ ref, className }}
-    />
-  );
-}
-
-Map.defaultProps = {
-  options: {
+const mapOptions = {
+  birmingham: {
     center: { lat: 52.4862, lng: -1.8904 },
     zoom: 15
   },
-  onMount: addMarkers,
-  onMountProps: links
+  coventry: {
+    center: { lat: 52.4068, lng: -1.5197 },
+    zoom: 15
+  },
+  dudley: {
+    center: { lat: 52.5123, lng: -2.0811 },
+    zoom: 15
+  },
+  sandwell: {
+    center: { lat: 52.5362, lng: -2.0108 },
+    zoom: 15
+  },
+  solihull: {
+    center: { lat: 52.4118, lng: -1.7776 },
+    zoom: 15
+  },
+  walsall: {
+    center: { lat: 52.5862, lng: -1.9829 },
+    zoom: 15
+  },
+  wolverhampton: {
+    center: { lat: 52.587, lng: -2.1284 },
+    zoom: 15
+  }
 };
 
-export default Map;
+function MapPage() {
+  const [authority, setAuthority] = useState(mapOptions.birmingham);
+
+  function changeMap(area) {
+    setAuthority(area);
+  }
+
+  return (
+    <section>
+      <Map options={authority} />
+      <table>
+        <tr>
+          <th>Local Authority</th>
+          <th>Trees Planted</th>
+        </tr>
+        <tr>
+          <td onClick={() => changeMap(mapOptions.birmingham)}>Birmingham</td>
+          <td>489</td>
+        </tr>
+        <tr>
+          <td onClick={() => changeMap(mapOptions.coventry)}>Coventry</td>
+          <td>376</td>
+        </tr>
+        <tr>
+          <td onClick={() => changeMap(mapOptions.dudley)}>Dudley</td>
+          <td>532</td>
+        </tr>
+        <tr>
+          <td onClick={() => changeMap(mapOptions.sandwell)}>Sandwell</td>
+          <td>342</td>
+        </tr>
+        <tr>
+          <td onClick={() => changeMap(mapOptions.solihull)}>Solihull</td>
+          <td>230</td>
+        </tr>
+        <tr>
+          <td onClick={() => changeMap(mapOptions.walsall)}>Walsall</td>
+          <td>871</td>
+        </tr>
+        <tr>
+          <td onClick={() => changeMap(mapOptions.wolverhampton)}>
+            Wolverhampton
+          </td>
+          <td>944</td>
+        </tr>
+      </table>
+    </section>
+  );
+}
+
+export default MapPage;
