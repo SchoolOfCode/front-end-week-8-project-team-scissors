@@ -18,7 +18,7 @@
   align-self: center;
   grid-column: 2 / 4;
   grid-row: 2 / 3;
-  font-size: 70px;
+  font-size: 45px;
 }
 
 .portalGrid3 {
@@ -40,11 +40,13 @@
   grid-row: 3 / 4;
   border: solid #5ab79c;
   border-width: 2px;
-  border-radius: 8%;
+  border-radius: 15px;
   background-color: whitesmoke;
   opacity: 0.95;
   margin: 1em;
-  font-size: 60px;
+  padding: 1.6em;
+  font-size: 40px;
+  color: grey;
 }
 
 .contentGrid5 {
@@ -55,11 +57,13 @@
   border: solid #5ab79c;
   border-width: 2px;
   padding: 10px;
-  border-radius: 8%;
+  border-radius: 15px;
   background-color: whitesmoke;
   opacity: 0.95;
   margin: 1em;
   font-size: 30px;
+  color: grey;
+  padding: 1.2em;
 }
 
 .registerPage {

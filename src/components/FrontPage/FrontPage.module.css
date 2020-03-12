@@ -20,11 +20,13 @@
   grid-row: 4 / 5;
   border: solid #5ab79c;
   border-width: 2px;
-  padding: 10px;
   border-radius: 8%;
   background-color: whitesmoke;
   opacity: 0.95;
   margin: 1em;
+  font-size: 18px;
+  padding-left: 1em;
+  padding-right: 1em;
 }
 
 .contentGrid2 {
@@ -38,6 +40,10 @@
   background-color: whitesmoke;
   opacity: 0.95;
   margin: 1em;
+  font-size: 18px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 4em;
 }
 
 .contentGrid3 {

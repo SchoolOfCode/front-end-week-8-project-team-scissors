@@ -51,3 +51,20 @@ function FrontPage() {
 }
 
 export default FrontPage;
+
+{
+  /* <Portal
+        className={css.portalGrid1}
+        onClick={() => {
+          history.push("/maps");
+        }}
+        text={"Maps"}
+      />
+      <Portal
+        className={css.portalGrid2}
+        onClick={() => {
+          history.push("/join");
+        }}
+        text={"Join"}
+      /> */
+}

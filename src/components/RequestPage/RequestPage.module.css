@@ -25,6 +25,12 @@
   display: grid;
   grid-column: 2 /4;
   grid-row: 3 / 4;
+  border: solid #5ab79c;
+  border-width: 4px;
+  border-radius: 10px;
+  padding: 1em;
+  background-color: whitesmoke;
+  justify-items: center;
 }
 
 .button1 {
@@ -33,6 +39,7 @@
   grid-row: 4 / 5;
   font-size: 40px;
   float: right;
+  padding: 1em;
 }
 
 .button2 {
@@ -41,6 +48,7 @@
   grid-row: 4 / 5;
   font-size: 40px;
   float: right;
+  padding: 1em;
 }
 
 .requestForm {
