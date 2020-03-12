@@ -3,14 +3,12 @@ import React, { useState } from "react";
 import Input from "../Input";
 
 function RegisterForm({ grid }) {
-  const [first_name, setFirstName] = useState("");
-  const [last_name, setLastName] = useState("");
-  const [organisation_name, setOrganisation] = useState("");
-  const [email_address, setEmail] = useState("");
-  const [phone_number, setPhone] = useState("");
-  const [password, setPassword] = useState("");
+  const [species, setSpecies] = useState("");
+  const [longitude, setlongitude] = useState("");
+  const [latitude, latitude] = useState("");
+  const [owner_id, setOwner_id] = useState("");
 
-  async function registerUser() {
+  async function requestTree() {
     const newUser = {
       first_name,
       last_name,
@@ -45,14 +43,7 @@ function RegisterForm({ grid }) {
         setValue={setOrganisation}
         label={"Organisation"}
       />
-      <Input value={email_address} setValue={setEmail} label={"Email"} />
-      <Input
-        value={phone_number}
-        setValue={setPhone}
-        label={"Telephone Number"}
-      />
-      <Input value={password} setValue={setPassword} label={"Password"} />
-      <button onClick={() => registerUser()}>Submit</button>
+      <button onClick={() => requestTrees()}>Submit</button>
     </section>
   );
 }
