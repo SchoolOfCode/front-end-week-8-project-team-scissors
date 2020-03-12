@@ -1,5 +1,5 @@
-/* .formSection {
+.buttonContainer {
+  padding-top: 1em;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-} */
+  justify-content: center;
+}
