@@ -97,9 +97,9 @@ function Map({ options, onMount, className, onMountProps }) {
   return (
     <div
       style={{
-        height: `60vh`,
-        width: `60vh`,
-        margin: `1em 0`,
+        height: `47.5vh`,
+        width: `100vh`,
+        // margin: `1em`,
         borderRadius: `0.5em`
       }}
       {...{ ref, className }}

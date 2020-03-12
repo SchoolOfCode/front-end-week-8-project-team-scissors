@@ -1,5 +1,7 @@
 import React from "react";
 
+import css from "./Input.module.css";
+
 function Input({ value, setValue, label }) {
   function handleInput(event) {
     setValue(event.target.value);
