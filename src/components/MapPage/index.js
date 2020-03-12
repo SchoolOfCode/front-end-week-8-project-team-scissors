@@ -1,6 +1,11 @@
 import React, { useState } from "react";
 
+import css from "./MapPage.module.css";
+
 import Map from "../Map";
+import Title from "../Title";
+
+const title = { type: "title", title: "What We've Achieved Together" };
 
 const mapOptions = {
   birmingham: {
@@ -41,9 +46,20 @@ function MapPage() {
   }
 
   return (
-    <section>
-      <Map options={authority} />
-      <table>
+    <section className={css.mapPage}>
+      <Title grid={css.titleGrid1} {...title} />
+      <section className={css.mapGrid}>
+        <Map options={authority} />
+      </section>
+      <section className={css.contentGrid1}>
+        <p>Click on each authority to focus the map on your local area.</p>
+      </section>
+      <section className={css.contentGrid2}>
+        <p>
+          The map below shows the location of each tree that we have planted.
+        </p>
+      </section>
+      <table className={css.tableGrid}>
         <tr>
           <th>Local Authority</th>
           <th>Trees Planted</th>

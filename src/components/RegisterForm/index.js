@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import Input from "../Input";
+import Button from "../Button";
 
 function RegisterForm({ grid }) {
   const [first_name, setFirstName] = useState("");
@@ -38,21 +39,21 @@ function RegisterForm({ grid }) {
 
   return (
     <section className={grid}>
-      <Input value={first_name} setValue={setFirstName} label={"First Name"} />
-      <Input value={last_name} setValue={setLastName} label={"Last Name"} />
+      <Input value={first_name} setValue={setFirstName} label={"First Name:"} />
+      <Input value={last_name} setValue={setLastName} label={"Last Name:"} />
       <Input
         value={organisation_name}
         setValue={setOrganisation}
-        label={"Organisation"}
+        label={"Organisation:"}
       />
-      <Input value={email_address} setValue={setEmail} label={"Email"} />
+      <Input value={email_address} setValue={setEmail} label={"Email:"} />
       <Input
         value={phone_number}
         setValue={setPhone}
-        label={"Telephone Number"}
+        label={"Telephone Number:"}
       />
-      <Input value={password} setValue={setPassword} label={"Password"} />
-      <button onClick={() => registerUser()}>Submit</button>
+      <Input value={password} setValue={setPassword} label={"Password:"} />
+      <Button handleClick={registerUser} text={"Submit"} />
     </section>
   );
 }

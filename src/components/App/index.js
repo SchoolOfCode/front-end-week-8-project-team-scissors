@@ -5,6 +5,7 @@ import css from "./App.module.css";
 import JoinPage from "../JoinPage";
 import FrontPage from "../FrontPage";
 import MapPage from "../MapPage";
+import RequestPage from "../RequestPage";
 
 function App() {
   return (
@@ -12,6 +13,9 @@ function App() {
       <Switch>
         <Route path="/Join">
           <JoinPage />
+        </Route>
+        <Route path="/Request">
+          <RequestPage />
         </Route>
         <Route path="/Maps">
           <MapPage />
