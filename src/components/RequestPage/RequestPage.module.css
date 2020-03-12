@@ -1,0 +1,51 @@
+.requestPage {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 5% 10% 10% 10% 60% 5%;
+  overflow: auto;
+  min-height: 95vh;
+  background-image: linear-gradient(
+    0.25turn,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
+  padding: 1em;
+}
+
+.titleGrid {
+  display: grid;
+  grid-column: 2/ 4;
+  grid-row: 1 / 2;
+  font-size: 35px;
+  text-align: center;
+}
+
+.paragraph1 {
+  display: grid;
+  grid-column: 2 /4;
+  grid-row: 3 / 4;
+}
+
+.button1 {
+  display: grid;
+  grid-column: 2/ 3;
+  grid-row: 4 / 5;
+  font-size: 40px;
+  float: right;
+}
+
+.button2 {
+  display: grid;
+  grid-column: 3 / 4;
+  grid-row: 4 / 5;
+  font-size: 40px;
+  float: right;
+}
+
+.requestForm {
+  display: grid;
+  grid-column: 2 / 4;
+  grid-row: 5 / 7;
+}

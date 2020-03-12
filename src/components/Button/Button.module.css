@@ -1,7 +1,7 @@
 .classButton {
   font-family: arial;
   color: #fffcfc !important;
-  font-size: 30px;
+  font-size: 20px;
   text-shadow: 1px 1px 0px #259af5;
   box-shadow: 1px 1px 1px #259af5;
   padding: 14px 25px;
@@ -24,8 +24,8 @@
 .classButton:hover {
   color: #259af5 !important;
   background: #f58025;
-  background: linear-gradient(top, #f68e3d, #f4720d);
-  background: -ms-linear-gradient(top, #f68e3d, #f4720d);
+  /* background: linear-gradient(top, #f68e3d, #f4720d);
+  background: -ms-linear-gradient(top, #f68e3d, #f4720d); */
   background: -webkit-gradient(
     linear,
     left top,

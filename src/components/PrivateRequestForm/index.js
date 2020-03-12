@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import css from "./PrivateRequestForm.module.css";
+
 import Input from "../Input";
 import Button from "../Button";
 
@@ -30,18 +32,18 @@ function PrivateRequestForm({ grid }) {
   }
 
   return (
-    <section className={grid}>
+    <section className={css.formSection}>
       <p>
         We want to plant as many trees as possible in the West Midlands. If you
         own the land that you are requesting trees for, we will be happy to
         provide you with as many trees as possible. However if you do not own
         the land, then make sure you have the land owner's permission before
-        placing a request.
+        placing a request. After requesting for trees to be planted in your
+        area, please be patient until we can get in touch. This should be no
+        longer than a few weeks.
       </p>
-      <p>
-        After requesting for trees to be planted in your area, please be patient
-        until we can get in touch. This should be no longer than a few weeks.
-      </p>
+      <Button handleClick={requestTrees} text={"Submit"} />
+
       <form>
         <Input
           value={buildingNumber}
@@ -71,7 +73,6 @@ function PrivateRequestForm({ grid }) {
           label={"Additional Information"}
         />
       </form>
-      <Button handleClick={requestTrees} text={"Submit"} />
     </section>
   );
 }

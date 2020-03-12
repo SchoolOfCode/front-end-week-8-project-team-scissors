@@ -2,7 +2,7 @@ label {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  text-align: left;
+  text-align: center;
   width: 400px;
   line-height: 26px;
   margin-bottom: 10px;

@@ -1,0 +1,4 @@
+.formSection {
+  display: flex;
+  flex-direction: row;
+}

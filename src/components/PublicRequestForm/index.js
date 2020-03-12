@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import css from "./PublicRequestForm.module.css";
+
 import Input from "../Input";
 import Button from "../Button";
 
@@ -33,15 +35,16 @@ function PublicRequestForm({ grid }) {
   }
 
   return (
-    <section className={grid}>
+    <section className={css.formSection}>
       <p>
         We want to plant as many trees as possible in the West Midlands.
+        <br />
         However, it may not be possible for your local authority to approve
         every request on public land.
-      </p>
-      <p>
+        <br />
         After requesting for trees to be planted in your area, please be patient
         until we can get in touch. This should be no longer than a few weeks.
+        <br />
       </p>
       <form>
         <Input
