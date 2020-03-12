@@ -6,6 +6,7 @@ import Banner from "../Banner";
 import Content from "../Content";
 import Portal from "../Portal";
 import Counter from "../Counter";
+import Header from "../Header";
 
 import css from "./FrontPage.module.css";
 
@@ -16,16 +17,16 @@ const banner = {
 
 const content1 = {
   type: "content",
-  title: "Benefit 1",
+
   text:
     "One tree can absorb 1 ton of carbon dioxide in 40 years. That's up to 48 pounds a year! This improves the air quality of the surrounding area."
 };
 
 const content2 = {
   type: "content",
-  title: "Benefit 2",
+
   text:
-    "A tree's leaves absorb and block sound. Lining a street with trees has reduced noise pollution by as much as 40% in some areas! Tree canopies (the leafy part at the very top) also cool down streets. The evaporation from one tree has the effect of 10 air-coolers."
+    "Lining a street with trees has reduced noise pollution by as much as 40% in some areas! Tree canopies also cool down streets. The evaporation from one tree has the effect of 10 air-coolers."
 };
 
 const portal = { type: "portal", link: "insert link here" };
@@ -33,6 +34,7 @@ const portal = { type: "portal", link: "insert link here" };
 function FrontPage() {
   return (
     <section className={css.frontPage}>
+      <Header grid={css.contentGrid4} />
       <Banner {...banner} />
       <Content {...content1} grid={css.contentGrid1} />
       <Content {...content2} grid={css.contentGrid2} />
