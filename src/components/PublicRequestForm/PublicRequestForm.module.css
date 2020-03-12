@@ -3,3 +3,13 @@
   display: flex;
   justify-content: center;
 }
+
+.formSection {
+  border: solid #5ab79c;
+  border-width: 2px;
+  padding: 10px;
+  border-radius: 5%;
+  background-color: whitesmoke;
+  opacity: 0.97;
+  margin: 1em;
+}

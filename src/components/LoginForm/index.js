@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import Input from "../Input";
+import Button from "../Button";
 
 function LoginForm({ grid }) {
   const [email, setEmail] = useState("");
@@ -16,7 +17,7 @@ function LoginForm({ grid }) {
     <section className={grid}>
       <Input value={email} setValue={setEmail} label={"Email"} />
       <Input value={password} setValue={setPassword} label={"Password"} />
-      <button onClick={() => handleLogin()}>Login</button>
+      <Button text={"Login"} />
     </section>
   );
 }

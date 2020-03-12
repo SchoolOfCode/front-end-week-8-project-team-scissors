@@ -4,13 +4,10 @@
   grid-template-rows: 5% 10% 10% 10% 60% 5%;
   overflow: auto;
   min-height: 95vh;
-  background-image: linear-gradient(
-    0.25turn,
-    var(--primary-color),
-    var(--secondary-color)
-  );
-  color: var(--secondary-color);
-  font-family: var(--primary-font);
+  background: url(../FrontPage/images/green-tree.png);
+  background-size: 100% 110%;
+  background-repeat: no-repeat;
+  background-color: #e6f2e3;
   padding: 1em;
 }
 
