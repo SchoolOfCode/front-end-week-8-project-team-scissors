@@ -6,6 +6,7 @@ import PublicRequestForm from "../PublicRequestForm";
 import PrivateRequestForm from "../PrivateRequestForm";
 import Button from "../Button";
 import Title from "../Title";
+import Header from "../Header";
 
 function RequestPage() {
   const [publicLand, setPublicLand] = useState(false);
@@ -22,6 +23,7 @@ function RequestPage() {
 
   return (
     <div className={css.requestPage}>
+      <Header grid={css.header} />
       <Title grid={css.titleGrid} title={"Request Trees"} />
       <p className={css.paragraph1}>
         Please select whether you want us to plant trees on public or plant

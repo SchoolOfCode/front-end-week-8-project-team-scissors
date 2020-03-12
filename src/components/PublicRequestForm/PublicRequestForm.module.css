@@ -12,4 +12,6 @@
   background-color: whitesmoke;
   opacity: 0.97;
   margin: 1em;
+  font-family: var(--primary-font);
+  color: #54565b;
 }

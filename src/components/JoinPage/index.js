@@ -5,16 +5,11 @@ import Portal from "../Portal";
 import Title from "../Title";
 import RegisterForm from "../RegisterForm";
 import LoginForm from "../LoginForm";
+import Header from "../Header";
 
 import css from "./JoinPage.module.css";
 
 const title = { type: "title", title: "Join Our Project" };
-
-const content = {
-  type: "content",
-  title: "benefits blah",
-  text: "here are the benefits of planting trees blah blah blah"
-};
 
 const portal = { type: "portal", link: "insert link here" };
 
@@ -28,9 +23,15 @@ function JoinPage() {
   return (
     <div>
       <section className={css.joinPage}>
+        <Header grid={css.header} />
         <Title grid={css.titleGrid1} {...title} />
-        <Content title={content.title} grid={css.contentGrid4} />
-        <Content title={content.title} grid={css.contentGrid5} />
+        <Content title={"How it works:"} grid={css.contentGrid4} />
+        <Content
+          title={
+            "1. Register or Login 2. Request Trees 3. Plant Trees 4. Check your tree on the virtual forest"
+          }
+          grid={css.contentGrid5}
+        />
         <Portal
           handleClick={handleRegister}
           grid={css.portalGrid3}

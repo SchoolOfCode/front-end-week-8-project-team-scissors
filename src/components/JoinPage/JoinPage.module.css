@@ -1,7 +1,7 @@
 .joinPage {
   display: grid;
   grid-template-columns: 5% 45% 45% 5%;
-  grid-template-rows: 5% 20% 50% 20%;
+  grid-template-rows: 14% 20% 50% 20%;
   overflow: auto;
   min-height: 95vh;
   background: url(../FrontPage/images/green-tree.png);
@@ -9,6 +9,8 @@
   background-repeat: no-repeat;
   background-color: #e6f2e3;
   padding: 1em;
+  font-family: var(--primary-font);
+  color: #54565b;
 }
 
 .titleGrid1 {
@@ -32,15 +34,32 @@
 }
 
 .contentGrid4 {
+  text-align: center;
   display: grid;
   grid-column: 2 / 3;
   grid-row: 3 / 4;
+  border: solid #5ab79c;
+  border-width: 2px;
+  border-radius: 8%;
+  background-color: whitesmoke;
+  opacity: 0.95;
+  margin: 1em;
+  font-size: 60px;
 }
 
 .contentGrid5 {
+  text-align: center;
   display: grid;
   grid-column: 3 / 4;
   grid-row: 3 / 4;
+  border: solid #5ab79c;
+  border-width: 2px;
+  padding: 10px;
+  border-radius: 8%;
+  background-color: whitesmoke;
+  opacity: 0.95;
+  margin: 1em;
+  font-size: 30px;
 }
 
 .registerPage {
@@ -51,6 +70,8 @@
   min-height: 70vh;
   background-color: #e6f2e3;
   padding: 1em;
+  font-family: var(--primary-font);
+  color: #54565b;
 }
 
 .registerSection {
@@ -63,4 +84,11 @@
   display: grid;
   grid-column: 3 / 4;
   grid-row: 1 / 4;
+}
+
+.header {
+  display: grid;
+  grid-column: 1 / 7;
+  grid-row: 1 / 2;
+  background-color: #54565b;
 }

@@ -4,6 +4,7 @@ import css from "./MapPage.module.css";
 
 import Map from "../Map";
 import Title from "../Title";
+import Header from "../Header";
 
 const title = { type: "title", title: "What We've Achieved Together" };
 
@@ -47,6 +48,7 @@ function MapPage() {
 
   return (
     <section className={css.mapPage}>
+      <Header grid={css.header} />
       <Title grid={css.titleGrid1} {...title} />
       <section className={css.mapGrid}>
         <Map options={authority} />
