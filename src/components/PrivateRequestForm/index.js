@@ -42,9 +42,8 @@ function PrivateRequestForm({ grid }) {
         area, please be patient until we can get in touch. This should be no
         longer than a few weeks.
       </p>
-      <Button handleClick={requestTrees} text={"Submit"} />
 
-      <form>
+      <form className={css.form}>
         <Input
           value={buildingNumber}
           setValue={setBuildingNumber}
@@ -73,6 +72,9 @@ function PrivateRequestForm({ grid }) {
           label={"Additional Information"}
         />
       </form>
+      <div className={css.buttonContainer}>
+        <Button handleClick={requestTrees} text={"Submit"} />
+      </div>
     </section>
   );
 }

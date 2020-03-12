@@ -1,9 +1,12 @@
 import React from "react";
 import css from "./Button.module.css";
 
-function Button({ handleClick, text }) {
+function Button({ handleClick, text, className }) {
   return (
-    <button className={css.classButton} onClick={() => handleClick()}>
+    <button
+      className={css.classButton + " " + className}
+      onClick={() => handleClick()}
+    >
       {text}
     </button>
   );

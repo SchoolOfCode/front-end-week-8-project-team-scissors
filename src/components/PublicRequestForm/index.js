@@ -75,7 +75,9 @@ function PublicRequestForm({ grid }) {
           label={"Additional Information"}
         />
       </form>
-      <Button handleClick={requestTrees} text={"Submit"} />
+      <div className={css.buttonContainer}>
+        <Button handleClick={requestTrees} text={"Submit"} />
+      </div>
     </section>
   );
 }
