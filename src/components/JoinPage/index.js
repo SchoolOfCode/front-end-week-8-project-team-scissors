@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+import { useHistory } from "react-router-dom";
+
 import Content from "../Content";
 import Portal from "../Portal";
 import Title from "../Title";
@@ -33,11 +35,11 @@ function JoinPage() {
           grid={css.contentGrid5}
         />
         <Portal
-          handleClick={handleRegister}
-          grid={css.portalGrid3}
-          {...portal}
+          className={css.portalGrid3}
+          onClick={() => handleRegister()}
+          text={"Register"}
         />
-        <Portal grid={css.portalGrid4} {...portal} />
+        <Portal className={css.portalGrid4} text={"Sign in here"} />
       </section>
       <section
         className={css.registerPage}

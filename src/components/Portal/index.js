@@ -1,17 +1,19 @@
 import React from "react";
-import css from "./Portal.module.css";
 
-function Portal({ link, grid, handleClick }) {
+import JoinPage from "../JoinPage";
+
+function Portal({ text, className, onClick }) {
   return (
-    <section className={grid}>
+    <section className={className}>
       <button
-        style={{ backgroundColor: "orange" }}
-        onClick={() => handleClick()}
+        style={{
+          backgroundColor: "#F58025"
+        }}
+        onClick={onClick}
       >
-        {link}
+        {text}
       </button>
     </section>
   );
 }
-
 export default Portal;

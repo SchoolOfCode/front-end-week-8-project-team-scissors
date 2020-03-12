@@ -25,12 +25,18 @@
   display: grid;
   grid-column: 2 / 3;
   grid-row: 4 / 5;
+  padding: 2.5em;
+  border-radius: 10px;
+  color: whitesmoke;
 }
 
 .portalGrid4 {
   display: grid;
   grid-column: 3 / 4;
   grid-row: 4 / 5;
+  padding: 2.5em;
+  border-radius: 10px;
+  color: whitesmoke;
 }
 
 .contentGrid4 {
