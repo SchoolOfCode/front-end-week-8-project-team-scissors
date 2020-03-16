@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 
 import Input from "../Input";
 import Button from "../Button";
@@ -10,6 +11,8 @@ function RegisterForm({ grid }) {
   const [email_address, setEmail] = useState("");
   const [phone_number, setPhone] = useState("");
   const [password, setPassword] = useState("");
+
+  const history = useHistory();
 
   async function registerUser() {
     const newUser = {
@@ -53,7 +56,12 @@ function RegisterForm({ grid }) {
         label={"Telephone Number:"}
       />
       <Input value={password} setValue={setPassword} label={"Password:"} />
-      <Button handleClick={registerUser} text={"Submit"} />
+      <Button
+        handleClick={() => {
+          history.push("/request");
+        }}
+        text={"Submit"}
+      />
     </section>
   );
 }

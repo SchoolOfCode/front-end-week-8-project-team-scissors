@@ -3,7 +3,7 @@
   grid-template-columns: 5% 1fr 5% 1fr 1fr 5%;
   grid-template-rows: 14% 20% 5% 10% 5% 50% 5%;
   overflow: auto;
-  min-height: 95vh;
+  min-height: 100vh;
   background: url(../FrontPage/images/green-tree.png);
   background-size: 100% 110%;
   background-repeat: no-repeat;

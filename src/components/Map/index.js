@@ -5,7 +5,7 @@ import svg from "./garden.svg";
 const links = [
   {
     coords: { lat: 52.4862, lng: -1.8104 }, // required: latitude & longitude at which to display the marker
-    title: `Another Tree`, // optional
+    title: `My First Tree`, // optional
     image: svg
   },
   {
@@ -56,6 +56,106 @@ const links = [
   {
     coords: { lat: 52.4608, lng: -1.915 }, // required: latitude & longitude at which to display the marker
     title: `Another Tree`, // optional
+    image: svg
+  },
+  {
+    coords: { lat: 52.5362, lng: -2.0104 }, // required: latitude & longitude at which to display the marker
+    title: `Another Tree`, // optional
+    image: svg
+  },
+  {
+    coords: { lat: 52.4882, lng: -1.8914 }, // required: latitude & longitude at which to display the marker
+    title: `Another Tree`, // optional
+    image: svg
+  },
+  {
+    coords: { lat: 52.4068, lng: -1.5197 }, // required: latitude & longitude at which to display the marker
+    title: `Coventry`, // optional
+    image: svg
+  },
+  {
+    coords: { lat: 52.4078, lng: -1.5187 }, // required: latitude & longitude at which to display the marker
+    title: `Coventry`, // optional
+    image: svg
+  },
+  {
+    coords: { lat: 52.4048, lng: -1.5127 }, // required: latitude & longitude at which to display the marker
+    title: `Coventry`, // optional
+    image: svg
+  },
+  {
+    coords: { lat: 52.4098, lng: -1.5117 }, // required: latitude & longitude at which to display the marker
+    title: `Coventry`, // optional
+    image: svg
+  },
+  {
+    coords: { lat: 52.4038, lng: -1.5197 }, // required: latitude & longitude at which to display the marker
+    title: `Coventry`, // optional
+    image: svg
+  },
+  {
+    coords: { lat: 52.4018, lng: -1.5117 }, // required: latitude & longitude at which to display the marker
+    title: `Coventry`, // optional
+    image: svg
+  },
+  {
+    coords: { lat: 52.5123, lng: -2.0811 }, // required: latitude & longitude at which to display the marker
+    title: `Dudley`, // optional
+    image: svg
+  },
+  {
+    coords: { lat: 52.5113, lng: -2.0821 }, // required: latitude & longitude at which to display the marker
+    title: `Dudley`, // optional
+    image: svg
+  },
+  {
+    coords: { lat: 52.5143, lng: -2.0861 }, // required: latitude & longitude at which to display the marker
+    title: `Dudley`, // optional
+    image: svg
+  },
+  {
+    coords: { lat: 52.5123, lng: -2.0821 }, // required: latitude & longitude at which to display the marker
+    title: `Dudley`, // optional
+    image: svg
+  },
+  {
+    coords: { lat: 52.5193, lng: -2.0831 }, // required: latitude & longitude at which to display the marker
+    title: `Dudley`, // optional
+    image: svg
+  },
+  {
+    coords: { lat: 52.5163, lng: -2.0851 }, // required: latitude & longitude at which to display the marker
+    title: `Dudley`, // optional
+    image: svg
+  },
+  {
+    coords: { lat: 52.5113, lng: -2.0801 }, // required: latitude & longitude at which to display the marker
+    title: `Dudley`, // optional
+    image: svg
+  },
+  {
+    coords: { lat: 52.5103, lng: -2.0841 }, // required: latitude & longitude at which to display the marker
+    title: `Dudley`, // optional
+    image: svg
+  },
+  {
+    coords: { lat: 52.5362, lng: -2.0108 }, // required: latitude & longitude at which to display the marker
+    title: `Sandwell`, // optional
+    image: svg
+  },
+  {
+    coords: { lat: 52.4118, lng: -1.7776 }, // required: latitude & longitude at which to display the marker
+    title: `Solihull`, // optional
+    image: svg
+  },
+  {
+    coords: { lat: 52.5862, lng: -1.9829 }, // required: latitude & longitude at which to display the marker
+    title: `Walsall`, // optional
+    image: svg
+  },
+  {
+    coords: { lat: 52.587, lng: -2.1284 }, // required: latitude & longitude at which to display the marker
+    title: `Wolverhampton`, // optional
     image: svg
   }
 ];

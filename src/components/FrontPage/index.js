@@ -38,21 +38,25 @@ function FrontPage() {
       <Banner {...banner} />
       <Content {...content1} grid={css.contentGrid1} />
       <Content {...content2} grid={css.contentGrid2} />
-      <Content grid={css.contentGrid3} />
-      <Counter grid={css.counterGrid1} counterText={css.counterText} />
+      <Counter
+        grid={css.counterGrid1 + " " + css.contentGrid3}
+        counterText={css.counterText}
+      />
       <Portal
+        buttonStyle={css.portalStyle}
         className={css.portalGrid1}
         onClick={() => {
           history.push("/maps");
         }}
-        text={"Maps"}
+        text={"See how far we've come"}
       />
       <Portal
+        buttonStyle={css.portalStyle}
         className={css.portalGrid2}
         onClick={() => {
           history.push("/join");
         }}
-        text={"Join"}
+        text={"Join our project"}
       />
     </section>
   );

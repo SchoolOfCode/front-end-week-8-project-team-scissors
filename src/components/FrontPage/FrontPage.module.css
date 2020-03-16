@@ -1,7 +1,7 @@
 .frontPage {
   display: grid;
   grid-template-columns: 5% 30% 30% 30% 5%;
-  grid-template-rows: 14% 20% 5% 35% 10% 10% 10% 5%;
+  grid-template-rows: 14% 20% 5% 35% 10% 10%;
   overflow: auto;
   min-height: 100vh;
   color: #54565b;
@@ -17,7 +17,7 @@
 .contentGrid1 {
   display: grid;
   grid-column: 2 / 3;
-  grid-row: 4 / 5;
+  grid-row: 4 / 6;
   border: solid #5ab79c;
   border-width: 2px;
   border-radius: 8%;
@@ -25,25 +25,23 @@
   opacity: 0.95;
   margin: 1em;
   font-size: 18px;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding: 1em;
+  padding-top: 1.5em;
 }
 
 .contentGrid2 {
   display: grid;
   grid-column: 3 / 4;
-  grid-row: 4 / 5;
+  grid-row: 4 / 6;
   border: solid #5ab79c;
   border-width: 2px;
-  padding: 10px;
   border-radius: 8%;
   background-color: whitesmoke;
   opacity: 0.95;
   margin: 1em;
   font-size: 18px;
-  padding-left: 1em;
-  padding-right: 1em;
-  padding-bottom: 4em;
+  padding: 1em;
+  padding-top: 1.5em;
 }
 
 .contentGrid3 {
@@ -52,7 +50,6 @@
   grid-row: 4 / 7;
   border: solid #5ab79c;
   border-width: 4px;
-  padding: 10px;
   border-radius: 8%;
   background-color: whitesmoke;
   justify-items: center;
@@ -68,10 +65,9 @@
 .counterText {
   text-align: center;
   position: relative;
-  bottom: 100%;
-  font-size: 48px;
-
+  font-size: 2em;
   opacity: 0.95;
+  padding-top: 1.5em;
 }
 
 .portalGrid1 {
@@ -90,8 +86,17 @@
   border-radius: 8%;
 }
 
+.portalStyle {
+  background-color: orange !important;
+  font-family: var(--primary-font);
+  font-size: 18px;
+  color: whitesmoke;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
 .counterGrid1 {
   display: grid;
   grid-column: 4 / 5;
-  grid-row: 5 / 8;
+  grid-row: 4 / span 3;
 }

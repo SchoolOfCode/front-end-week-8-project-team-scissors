@@ -18,6 +18,7 @@ function Counter({ grid, counterText }) {
         Together we have planted:
         <span style={{ color: "#f58025" }}>{counter}</span> trees!
       </h1>
+      <p className={counterText}>#WM2041</p>
     </section>
   );
 }

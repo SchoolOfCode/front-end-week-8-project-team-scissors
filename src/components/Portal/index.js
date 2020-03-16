@@ -2,15 +2,10 @@ import React from "react";
 
 import JoinPage from "../JoinPage";
 
-function Portal({ text, className, onClick }) {
+function Portal({ text, className, onClick, buttonStyle }) {
   return (
     <section className={className}>
-      <button
-        style={{
-          backgroundColor: "#F58025"
-        }}
-        onClick={onClick}
-      >
+      <button className={buttonStyle} onClick={onClick}>
         {text}
       </button>
     </section>

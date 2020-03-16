@@ -13,8 +13,6 @@ import css from "./JoinPage.module.css";
 
 const title = { type: "title", title: "Join Our Project" };
 
-const portal = { type: "portal", link: "insert link here" };
-
 function JoinPage() {
   const [register, setRegister] = useState(false);
 
@@ -27,19 +25,29 @@ function JoinPage() {
       <section className={css.joinPage}>
         <Header grid={css.header} />
         <Title grid={css.titleGrid1} {...title} />
-        <Content title={"How it works:"} grid={css.contentGrid4} />
+        <Content text={"How it works:"} grid={css.contentGrid4} />
         <Content
-          title={
-            "1. Register or Login 2. Request Trees 3. Plant Trees 4. Check your tree on the virtual forest"
+          text={
+            <ol>
+              <li>Register or Login</li>
+              <li>Request Trees</li>
+              <li>Plant Trees</li>
+              <li>Check your tree on the virtual forest</li>
+            </ol>
           }
           grid={css.contentGrid5}
         />
         <Portal
+          buttonStyle={css.portalStyle}
           className={css.portalGrid3}
           onClick={() => handleRegister()}
           text={"Register"}
         />
-        <Portal className={css.portalGrid4} text={"Sign in here"} />
+        <Portal
+          buttonStyle={css.portalStyle}
+          className={css.portalGrid4}
+          text={"Sign in here"}
+        />
       </section>
       <section
         className={css.registerPage}

@@ -1,9 +1,9 @@
 .joinPage {
   display: grid;
   grid-template-columns: 5% 45% 45% 5%;
-  grid-template-rows: 14% 20% 50% 20%;
+  grid-template-rows: 14% 15% 50% 20%;
   overflow: auto;
-  min-height: 95vh;
+  min-height: 100vh;
   background: url(../FrontPage/images/green-tree.png);
   background-size: 100% 110%;
   background-repeat: no-repeat;
@@ -50,7 +50,6 @@
   background-color: whitesmoke;
   opacity: 0.95;
   margin: 1em;
-  padding: 1.6em;
   font-size: 40px;
   color: grey;
 }
@@ -67,7 +66,7 @@
   background-color: whitesmoke;
   opacity: 0.95;
   margin: 1em;
-  font-size: 30px;
+  font-size: 1.5em;
   color: grey;
   padding: 1.2em;
 }
@@ -101,4 +100,13 @@
   grid-column: 1 / 7;
   grid-row: 1 / 2;
   background-color: #54565b;
+}
+
+.portalStyle {
+  background-color: orange !important;
+  font-family: var(--primary-font);
+  font-size: 18px;
+  color: whitesmoke;
+  border-radius: 10px;
+  font-weight: bold;
 }
